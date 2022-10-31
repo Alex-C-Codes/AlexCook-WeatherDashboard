@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* general styling */
+header {
+    /* background-color: plum; */
+    background-image: linear-gradient(to right, plum, blueviolet);
+    padding: 1%;
+    text-align:center
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    padding: 3%;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 2%;
+}
+
+.forecastBox {
+    background-color: #323d4f;
+    color: white;
+}
+
+/* .row {
+    --bs-gutter-x: 0rem;
+} */
+
+/* div {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+} */
