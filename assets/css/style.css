@@ -6,7 +6,6 @@
 
 /* general styling */
 header {
-    /* background-color: plum; */
     background-image: linear-gradient(to right, plum, blueviolet);
     padding: 1%;
     text-align:center
@@ -18,7 +17,7 @@ a, a:hover {
 }
 
 h2 {
-    padding: 3%;
+    padding: 2%;
 }
 
 ul {
@@ -26,17 +25,71 @@ ul {
     padding-left: 2%;
 }
 
+img {
+    width: 45px;
+    height: 45px;
+}
+
+.contentContainer {
+    padding-left: 3%;
+    padding-right: 3%;
+    /* margin-left: 0;
+    margin-right: 0; */
+    margin: 0;
+}
+
+.contentRow {
+    margin: 0;
+}
+
+/* Current Conditions styling */
+#currentDayImgID {
+    width: 12%;
+    height: 12%;
+    /* width: 45px;
+    height: 45px; */
+}
+
+#cityName {
+    /* width: 60%; */
+    /* padding-bottom: 0; */
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+/* 5-Day Forecast styling */
 .forecastBox {
+    margin-right: 1%;
     background-color: #323d4f;
     color: white;
 }
 
-/* .row {
-    --bs-gutter-x: 0rem;
-} */
+/* search history styling */
+.searchedCity, .searchedCity:hover {
+    background-color: #aeaeae;
+    border-radius: 5px;
+    width: 100%;
+    border: none;
+    color: black;
+    margin-bottom: 8%;
+}
 
-/* div {
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-} */
+/* responsive design */
+/* If the screen size is 601px wide or more, set the font-size of .forecastBox to 90% */
+@media screen and (min-width: 768px) {
+    .forecastBox {
+      font-size: 80%;
+    }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of .forecastBox to 80% */
+@media screen and (max-width: 767px) {
+    .forecastBox {
+      font-size: 50%;
+    }
+
+    img {
+        width: 12px;
+        height: 12px;
+    }
+}
